@@ -1,6 +1,6 @@
-# Gender Swap: Age Filter Web Pages
+# Transform Web Pages
 
-Public website and legal pages for the Gender Swap: Age Filter Android application.
+Public website and legal pages for the Transform Android application (Google Play package: Gender Swap: Age Filter).
 
 - Website: https://durdenk.github.io/transform_web/
 - Privacy policy: https://durdenk.github.io/transform_web/privacy-policy.html
