@@ -1,6 +1,6 @@
 # Transform Web Pages
 
-Public website and legal pages for the Transform Android application (Google Play package: Gender Swap: Age Filter).
+Public website and legal pages for the Transform Android application (Google Play package: Transform).
 
 - Website: https://durdenk.github.io/transform_web/
 - Privacy policy: https://durdenk.github.io/transform_web/privacy-policy.html

@@ -1,6 +1,6 @@
-# Gender Swap: Age Filter Play Console Data Safety Map
+# Transform Play Console Data Safety Map
 
-Last code review: 2026-08-16
+Last code review: 2026-10-31
 
 This is an implementation-derived worksheet for the Google Play Console Data
 Safety form. It is not a substitute for checking the production backend,
@@ -10,11 +10,11 @@ portrait-processing provider contracts, Firebase/AdMob settings, or the final Pl
 
 - Data is encrypted in transit: **Yes for app-owned traffic.** The production
   API and downloaded result URLs used by the app must remain HTTPS.
-- Account creation: **No.** Gender Swap: Age Filter does not create user accounts.
-- Local data deletion: Android Settings > Apps > Gender Swap: Age Filter > Storage > Clear data,
+- Account creation: **No.** Transform does not create user accounts.
+- Local data deletion: Android Settings > Apps > Transform > Storage > Clear data,
   or uninstall the app.
 - Server-side deletion request: email `cukkacreatives@gmail.com` with the subject
-  `Gender Swap: Age Filter data deletion request` and the approximate request date, time, and
+  `Transform data deletion request` and the approximate request date, time, and
   feature.
 - Android cloud backup/device transfer: **Disabled.**
 - Runtime dangerous permission: **Camera only.**
@@ -52,10 +52,9 @@ not user-data access.
 
 | Play data type | Collected off device | Main purpose | Required or optional |
 | --- | --- | --- | --- |
-| Photos | Yes, when the user starts an analysis | App functionality; portrait analysis/transformation | Optional, user-initiated |
+| Photos | Yes, when the user starts a transformation | App functionality; portrait transformation | Optional, user-initiated |
 | Approximate location | Yes: country code derived from cellular-network country or device locale; AdMob may also infer it from network data | App functionality/localization; advertising | Transformation request: required; ad processing depends on consent/region |
-| Other personal info | Conservatively yes: entertainment-only estimated age and appearance-related results | App functionality | Optional, user-initiated |
-| Race and ethnicity | Review conservatively because the nationality-guesser feature creates a nationality-related inference | App functionality | Optional, user-initiated |
+| Other user-generated content | Yes: optional in-app feedback message text, sent to the backend together with the app version and the app installation UUID | App functionality (support/handling feedback) | Optional, user-initiated |
 | Purchase history | Yes through Google Play Billing: product, purchase state, entitlement, and token | App functionality and purchase management | Optional, user-initiated |
 | App interactions | Yes through Firebase Analytics and AdMob, including feature, result, purchase, and ad events | Analytics; advertising | Analytics is automatic; rewarded-ad interaction is optional |
 | Crash logs | Yes through Firebase Crashlytics | Analytics/app stability | Automatic |
@@ -70,7 +69,7 @@ or other IDs**.
 
 ## Sharing decision that must be confirmed
 
-Gender Swap: Age Filter sends portraits and request metadata to its backend and portrait-processing
+Transform sends portraits and request metadata to its backend and portrait-processing
 providers. In Play Console, mark these data types as **shared** unless every
 recipient qualifies for a Google Play sharing exception (for example, a
 contracted service provider processing data only on the developer's behalf).
@@ -89,7 +88,6 @@ SDK provider's disclosure guidance.
 - Broad photo-library/media access
 - Complete payment-card or bank details
 - Account credentials (there is no account system)
-- User-entered feedback (the API capability exists, but no current UI invokes it)
 
 ## Before submitting the form
 
